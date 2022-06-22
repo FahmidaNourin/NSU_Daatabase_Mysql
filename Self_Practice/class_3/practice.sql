@@ -52,6 +52,7 @@ DESCRIBE EMPLOYEE
 
 Concatenation Operator
 SELECT CONCAT(Age,' ',ID) FROM `EMPLOYEE`
+SELECT CONCAT(Department,' ',ID) AS NewId,Gender,Age,City FROM `EMPLOYEE`
 
 
 
