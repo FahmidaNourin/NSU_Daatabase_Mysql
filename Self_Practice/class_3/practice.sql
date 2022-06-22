@@ -41,6 +41,7 @@ Arithmetic Expressions
 SELECT ID,Name,Department,Salary+5000 FROM  EMPLOYEE
 or
 SELECT ID,Name,Department,Salary+5000 AS Bonous FROM  EMPLOYEE
+SELECT ID,Name,Department,Salary*0.55 AS Bonous FROM  EMPLOYEE
 
 
 
