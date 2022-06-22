@@ -55,6 +55,11 @@ SELECT CONCAT(Age,' ',ID) FROM `EMPLOYEE`
 SELECT CONCAT(Department,' ',ID) AS NewId,Gender,Age,City FROM `EMPLOYEE`
 
 
+Eliminating Duplicate Rows
+SELECT DISTINCT * FROM `employee`
+
+
+
 
 
 
