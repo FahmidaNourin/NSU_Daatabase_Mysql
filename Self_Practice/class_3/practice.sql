@@ -35,7 +35,12 @@ INSERT INTO Employee (Id, `Name`, Department, Salary, Gender, Age, City) VALUES 
 Defining a Column Alias
 
 SELECT ID,Name,Department AS DEPT FROM EMPLOYEE
+SELECT ID AS Roll_no,Name AS NA,Department AS DEPT FROM EMPLOYEE
 
+Arithmetic Expressions
+SELECT ID,Name,Department,Salary+5000 FROM  EMPLOYEE
+or
+SELECT ID,Name,Department,Salary+5000 AS Bonous FROM  EMPLOYEE
 
 
 
