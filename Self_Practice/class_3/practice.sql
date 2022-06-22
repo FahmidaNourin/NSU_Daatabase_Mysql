@@ -5,7 +5,7 @@ CREATE TABLE EMPLOYEE(
     ID INT(4) NOT NULL,
     Name VARCHAR(20) NOT NULL ,
     Department VARCHAR(5) NOT NULL,
-    Salary DECIMAL(6,2) NOT NULL,
+    Salary DECIMAL(15,2) NOT NULL,
     Gender VARCHAR(5) NOT NULL,
     Age INT(2) NOT NULL,
     City VARCHAR(8)
