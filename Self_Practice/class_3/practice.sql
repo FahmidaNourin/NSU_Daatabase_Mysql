@@ -25,3 +25,24 @@ INSERT INTO Employee (Id, `Name`, Department, Salary, Gender, Age, City) VALUES 
 INSERT INTO Employee (Id, `Name`, Department, Salary, Gender, Age, City) VALUES (1008, 'Sambit Mohanty', 'IT', 50000, 'Male', 28, 'Mumbai');
 INSERT INTO Employee (Id, `Name`, Department, Salary, Gender, Age, City) VALUES (1009, 'Pranaya Kumar', 'IT', 50000, 'Male', 28, 'Mumbai');
 INSERT INTO Employee (Id, `Name`, Department, Salary, Gender, Age, City) VALUES (1010, 'Hina Sharma', 'HR', 75000, 'Female', 26, 'Mumbai');
+
+
+
+
+
+
+
+Defining a Column Alias
+
+SELECT ID,Name,Department AS DEPT FROM EMPLOYEE
+
+
+
+
+
+
+
+
+
+
+
