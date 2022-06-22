@@ -50,6 +50,9 @@ SHOW TABLES
 DESCRIBE EMPLOYEE
 
 
+Concatenation Operator
+SELECT CONCAT(Age,' ',ID) FROM `EMPLOYEE`
+
 
 
 
