@@ -45,6 +45,11 @@ SELECT ID,Name,Department,Salary*0.55 AS Bonous FROM  EMPLOYEE
 
 
 
+Displaying Table Structure
+SHOW TABLES
+
+
+
 
 
 
