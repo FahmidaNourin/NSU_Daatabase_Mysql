@@ -44,3 +44,8 @@ INSERT INTO `orders`(`Order_ID`, `Order_name`, `Person_ID`, `Price`) VALUES
 SELECT p.Person_ID,p.FirstName,o.Order_ID 
 FROM person as p,orders as o
 WHERE p.Person_ID=o.Person_ID
+
+
+SELECT p.Person_ID,CONCAT(p.FirstName," ",p.LastName) AS Name,o.Order_ID
+FROM person AS p,orders AS o
+WHERE p.Person_ID=o.Person_ID
