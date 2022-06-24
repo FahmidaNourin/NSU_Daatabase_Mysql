@@ -39,3 +39,8 @@ INSERT INTO `orders`(`Order_ID`, `Order_name`, `Person_ID`, `Price`) VALUES
     (6,1159,5,53.00),
     (7,1159,3,53.00),
     (8,1159,2,53.00)
+
+
+SELECT p.Person_ID,p.FirstName,o.Order_ID 
+FROM person as p,orders as o
+WHERE p.Person_ID=o.Person_ID
