@@ -28,3 +28,14 @@ INSERT INTO `person`(`Person_ID`, `LastName`, `FirstName`, `Age`, `Adress`, `Ema
 (3,'HEsen','oHa',70,'aZPUR','TYI',172676527),
 (4,'HaRen','olLa',20,'gaZPR','TEU',173876527),
 (5,'HSasen','oDla',4,'gaPZPUR','TOU',173675527)
+
+
+INSERT INTO `orders`(`Order_ID`, `Order_name`, `Person_ID`, `Price`) VALUES 
+(1,1189,1,23.00),
+ (2,1289,2,22.00),
+  (3,1389,3,33.00),
+   (4,4189,4,43.00),
+    (5,1159,5,53.00),
+    (6,1159,5,53.00),
+    (7,1159,3,53.00),
+    (8,1159,2,53.00)
