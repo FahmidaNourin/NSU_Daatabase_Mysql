@@ -49,3 +49,15 @@ WHERE p.Person_ID=o.Person_ID
 SELECT p.Person_ID,CONCAT(p.FirstName," ",p.LastName) AS Name,o.Order_ID
 FROM person AS p,orders AS o
 WHERE p.Person_ID=o.Person_ID
+
+
+#SHowing infos age between 21 and 30
+SELECT p.Person_ID,CONCAT(p.FirstName," ",p.LastName) AS Name,p.Age,o.Order_ID
+FROM person AS p,orders AS o
+WHERE p.Person_ID=o.Person_ID and p.Age<=30 and p.Age>=21
+
+
+#SHowing info for adult
+SELECT p.Person_ID,CONCAT(p.FirstName," ",p.LastName) AS Name,p.Age,o.Order_ID
+FROM person AS p,orders AS o
+WHERE p.Person_ID=o.Person_ID and p.age>18 
