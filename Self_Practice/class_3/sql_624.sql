@@ -10,3 +10,15 @@ CREATE TABLE Person (
     Primary key(Person_ID)
     
 );
+
+
+
+
+CREATE TABLE ORDERS(
+    Order_ID INT(1)NOT NULL,
+    Order_name INT(5)NOT NULL,
+    Person_ID INT(2)NOT NULL,
+    Price DECIMAL(10,2),
+    Primary key(Order_ID ),
+    Foreign key( Person_ID)REFERENCES person( Person_ID)
+);
