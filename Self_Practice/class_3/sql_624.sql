@@ -22,3 +22,9 @@ CREATE TABLE ORDERS(
     Primary key(Order_ID ),
     Foreign key( Person_ID)REFERENCES person( Person_ID)
 );
+INSERT INTO `person`(`Person_ID`, `LastName`, `FirstName`, `Age`, `Adress`, `Email`, `Contact_Number`) VALUES
+(1,'Hasen','ola',30,'gaZPUR','TYU',173676527),
+(2,'HasenA','olaN',40,'gZPUR','TGU',113676527),
+(3,'HEsen','oHa',70,'aZPUR','TYI',172676527),
+(4,'HaRen','olLa',20,'gaZPR','TEU',173876527),
+(5,'HSasen','oDla',4,'gaPZPUR','TOU',173675527)
