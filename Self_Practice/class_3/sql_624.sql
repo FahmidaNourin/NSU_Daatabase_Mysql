@@ -77,7 +77,9 @@ SELECT Email
 FROM `person`
 WHERE Age>20 AND Age<31
 
+
 #Find the Adress and FirstName,LastName in a single column as "FullName"
+
 SELECT CONCAT (Adress," ",FirstName," ",LastName)AS FullName
 FROM `person` 
 WHERE 1
@@ -90,6 +92,7 @@ WHERE Order_ID>=3 AND Order_ID<=10
 
 
 #Find Order_ID and Price with 10% discount 
+
 SELECT Order_ID, Price*0.9
 FROM `orders` 
 WHERE 1
@@ -97,12 +100,15 @@ WHERE 1
 #Find All the order_id,Price and coresponding customer (FastName and LAstName)as "FullName"
 and (Contact NUmber and Email) as Contact_Info
 
-SELECT o.Order_ID,o.Price,CONCAT(p.FirstName," ",LastName)AS FullName,CONCAT(Contact_Number," ",Email)AS ContactInfo
+SELECT o.Order_ID,o.Price,CONCAT(p.FirstName," ",p.LastName)AS FullName,CONCAT(p.Contact_Number," ",p.Email)AS ContactInfo
 FROM person AS p,orders AS o 
 WHERE p.Person_ID=o.Person_ID
 
 
-#Find customer FirstName,Customer_ID,Order_ID,Price 
+#Find customer FirstName,Person_ID,Order_ID,Price 
 SELECT p.FirstName,p.Person_ID,o.Order_ID,o.Price
 FROM person AS p,orders AS o
 WHERE p.Person_ID=o.Person_ID
+
+
+#Find Person_ID,F
