@@ -77,3 +77,7 @@ SELECT Email
 FROM `person`
 WHERE Age>20 AND Age<31
 
+#Find the Adress and FirstName,LastName in a single column as "FullName"
+SELECT CONCAT (Adress," ",FirstName," ",LastName)AS FullName
+FROM `person` 
+WHERE 1
