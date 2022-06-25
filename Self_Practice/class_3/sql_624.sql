@@ -100,3 +100,9 @@ and (Contact NUmber and Email) as Contact_Info
 SELECT o.Order_ID,o.Price,CONCAT(p.FirstName," ",LastName)AS FullName,CONCAT(Contact_Number," ",Email)AS ContactInfo
 FROM person AS p,orders AS o 
 WHERE p.Person_ID=o.Person_ID
+
+
+#Find customer FirstName,Customer_ID,Order_ID,Price 
+SELECT p.FirstName,p.Person_ID,o.Order_ID,o.Price
+FROM person AS p,orders AS o
+WHERE p.Person_ID=o.Person_ID
