@@ -61,3 +61,19 @@ WHERE p.Person_ID=o.Person_ID and p.Age<=30 and p.Age>=21
 SELECT p.Person_ID,CONCAT(p.FirstName," ",p.LastName) AS Name,p.Age,o.Order_ID
 FROM person AS p,orders AS o
 WHERE p.Person_ID=o.Person_ID and p.age>18 
+
+
+
+#Find the LastName and ContactNumber of Adult Customer
+
+SELECT LastName,Contact_Number
+FROM `person`
+WHERE Age>18
+
+
+#Find the emaile of Customer aged 20 to 31
+
+SELECT Email
+FROM `person`
+WHERE Age>20 AND Age<31
+
