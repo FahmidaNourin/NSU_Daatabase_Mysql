@@ -81,3 +81,9 @@ WHERE Age>20 AND Age<31
 SELECT CONCAT (Adress," ",FirstName," ",LastName)AS FullName
 FROM `person` 
 WHERE 1
+
+
+#Find the order price multiply by 100 for Order_ID 3 to 10
+SELECT Price*100
+FROM `orders`
+WHERE Order_ID>=3 AND Order_ID<=10
