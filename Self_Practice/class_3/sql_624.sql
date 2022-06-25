@@ -87,3 +87,16 @@ WHERE 1
 SELECT Price*100
 FROM `orders`
 WHERE Order_ID>=3 AND Order_ID<=10
+
+
+#Find Order_ID and Price with 10% discount 
+SELECT Order_ID, Price*0.9
+FROM `orders` 
+WHERE 1
+
+#Find All the order_id,Price and coresponding customer (FastName and LAstName)as "FullName"
+and (Contact NUmber and Email) as Contact_Info
+
+SELECT o.Order_ID,o.Price,CONCAT(p.FirstName," ",LastName)AS FullName,CONCAT(Contact_Number," ",Email)AS ContactInfo
+FROM person AS p,orders AS o 
+WHERE p.Person_ID=o.Person_ID
