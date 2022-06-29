@@ -87,7 +87,8 @@ INSERT INTO employees VALUES (130, 'Mozhe' , 'Atkinson' , 'MATKINSO' , '650.124.
 
 
 
-#Restricting t=with Character String and dates
+#Restricting with Character String and dates
+
 
 
 
