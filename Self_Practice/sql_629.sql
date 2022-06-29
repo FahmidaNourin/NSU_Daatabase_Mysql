@@ -111,6 +111,9 @@ SELECT * FROM `employees` WHERE last_name LIKE '%n';
 --to show the last name starting with C and ending with N
 SELECT * FROM `employees` WHERE last_name LIKE 'c%n';
 
+--to show the last name containing c in second position
+SELECT * FROM `employees` WHERE last_name like '_c%';
+
 
 
 
