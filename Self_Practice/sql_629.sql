@@ -20,7 +20,7 @@ CREATE TABLE employees
    , department_id INTEGER
    , constraint pk_emp primary key (employee_id) 
    , constraint fk_deptno foreign key (department_id) references departments(department_id)  
-   ) ;
+   );
 
 
 
@@ -78,16 +78,19 @@ INSERT INTO employees VALUES (130, 'Mozhe' , 'Atkinson' , 'MATKINSO' , '650.124.
 
 ##Exrcs
 
-#Limiting the rows Selected
+#Limiting the rows Selected (to slect row index)
+--selecting row index 3 to 7
+SELECT * FROM `employees` LIMIT 3,7;
 
 
 
 
 
+#Restricting with Character String and dates (to convert one datatype to another)
+--convert hire_date to char
 
+SELECT CAST(hire_date as CHAR) as CHAR_DATE FROM `employees`
 
-
-#Restricting with Character String and dates
 
 
 
@@ -96,7 +99,8 @@ INSERT INTO employees VALUES (130, 'Mozhe' , 'Atkinson' , 'MATKINSO' , '650.124.
 
 
 #Comparision Conditions (LIKE and NULL)
-
+-- to check any colunm has null value or not
+SELECT * FROM `employees` WHERE commission_pct is NULL
 
 
 
