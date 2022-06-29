@@ -81,6 +81,7 @@ INSERT INTO employees VALUES (130, 'Mozhe' , 'Atkinson' , 'MATKINSO' , '650.124.
 #Limiting the rows Selected (to slect row index)
 --selecting row index 3 to 7
 SELECT * FROM `employees` LIMIT 3,7;
+SELECT CONCAT(email," ",phone_number) AS adress FROM `employees` LIMIT 5,11;
 
 
 
@@ -90,6 +91,7 @@ SELECT * FROM `employees` LIMIT 3,7;
 --convert hire_date to char
 
 SELECT CAST(hire_date as CHAR) as CHAR_DATE FROM `employees`
+SELECT CAST(employee_id as CHAR) FROM `employees` WHERE 1;
 
 
 
@@ -101,6 +103,7 @@ SELECT CAST(hire_date as CHAR) as CHAR_DATE FROM `employees`
 #Comparision Conditions (LIKE and NULL)
 -- to check any colunm has null value or not
 SELECT * FROM `employees` WHERE commission_pct is NULL
+SELECT CONCAT(last_name,"",first_name) AS FULLNAme FROM `employees` WHERE manager_id is NULL;
 
 -- to show the last name starting with C
 SELECT * FROM `employees` WHERE last_name LIKE 'c%';
@@ -113,6 +116,9 @@ SELECT * FROM `employees` WHERE last_name LIKE 'c%n';
 
 --to show the last name containing c in second position
 SELECT * FROM `employees` WHERE last_name like '_c%';
+
+--to show the last name containing a in middle position
+SELECT * FROM `employees` WHERE first_name LIKE '%a%'
 
 
 
