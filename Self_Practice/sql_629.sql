@@ -73,3 +73,33 @@ INSERT INTO employees VALUES (127, 'James' , 'Landry' , 'JLANDRY' , '650.124.133
 INSERT INTO employees VALUES (128, 'Steven' , 'Markle' , 'SMARKLE' , '650.124.1434' , '2000-03-04' , 'ST_CLERK' , 2200 , NULL , 120 , 50);
 INSERT INTO employees VALUES (129, 'Laura' , 'Bissot' , 'LBISSOT' , '650.124.5234' ,'1997-09-10' , 'ST_CLERK' , 3300 , NULL , 121 , 50);
 INSERT INTO employees VALUES (130, 'Mozhe' , 'Atkinson' , 'MATKINSO' , '650.124.6234' , '1997-10-12' , 'ST_CLERK' , 2800 , NULL , 121 , 110);
+
+
+
+##Exrcs
+
+#Limiting the rows Selected
+
+
+
+
+
+
+
+
+#Restricting t=with Character String and dates
+
+
+
+
+
+
+#Comparision Conditions (LIKE and NULL)
+
+
+
+
+
+
+
+
