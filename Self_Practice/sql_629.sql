@@ -102,6 +102,17 @@ SELECT CAST(hire_date as CHAR) as CHAR_DATE FROM `employees`
 -- to check any colunm has null value or not
 SELECT * FROM `employees` WHERE commission_pct is NULL
 
+-- to show the last name starting with C
+SELECT * FROM `employees` WHERE last_name LIKE 'c%';
+
+--to show the the last name ending with N;
+SELECT * FROM `employees` WHERE last_name LIKE '%n';
+
+--to show the last name starting with C and ending with N
+SELECT * FROM `employees` WHERE last_name LIKE 'c%n';
+
+
+
 
 
 
