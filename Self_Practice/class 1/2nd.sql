@@ -1,4 +1,5 @@
 drop table Agent;
+
 CREATE TABLE Agent(
     AGENT_CODE VARCHAR2(4),
     AGENT_NAME VARCHAR2(15),
@@ -7,6 +8,7 @@ CREATE TABLE Agent(
     PHONE_NO NUMBER(15),
     COUNTRY VARCHAR2(15)
 );
+
 INSERT INTO Agent(
                   AGENT_CODE,
                   AGENT_NAME,
